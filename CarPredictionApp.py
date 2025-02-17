@@ -80,8 +80,8 @@ transmission = st.selectbox('Transmission', ['Automatic', 'Manual'])
 fuel_type = st.selectbox('Fuel Type', ['Petrol', 'Diesel', 'Electric'])
 miles = st.number_input('Mileage (in miles)', min_value=0, step=1)
 year = st.number_input('Year of Manufacture', min_value=2000, max_value=2025)
-engine_vol = st.number_input('Engine Volume', min_value=0.0, step=0.1)
-engine_size = st.number_input('Engine Size', min_value=0.0, step=0.1)
+engine_vol = st.number_input('Engine Volume(in Litres)', min_value=0.0, step=0.1)
+engine_size = st.number_input('Engine Power(in bhp)', min_value=0.0, step=0.1)
 num_owner = st.number_input('Number of Owners', min_value=0, step=1)
 
 def preprocess_input(input_data):
